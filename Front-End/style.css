@@ -1,0 +1,226 @@
+body{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    /* padding: 0; */
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
+    /* right: 500px; */
+    /* background-repeat: no-repeat; */
+}
+
+.navigation{
+    position: fixed;
+    /* border: 2px solid red; */
+    width: 20%;
+    /* background-color: black; */
+    height: 100%;
+}
+.logo img{
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+.navmanu{
+    display: flex;
+    /* position: fixed; */
+    /* height: 100%; */
+    flex-direction: column;
+    align-items: center;
+}
+.navmanu button{
+    /* margin-bottom: 50px; */
+    width: 80%;
+    height: 70px;
+    font-size: 28px;
+    /* font-family: 'Abril Fatface', cursive; */
+    /* font-family: 'Pushster', cursive; */
+    font-family: 'PT Serif', serif;
+    background-color: white;
+    border: none;
+    /* border-radius: 15px; */
+}
+.navmanu button a{
+    text-decoration: none;
+    color: white;
+}
+.function{
+    /* border: 2px solid red; */
+    position: fixed;
+    width: 80%;
+    height: 100%;
+    left: 20%;
+    font-family: 'Abril Fatface', cursive;
+    background-image: url('funbg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    /* background-size: 70%; */
+    font-family: 'Pushster', cursive;
+    overflow-y: auto;
+}
+.form {
+    display: none;
+    max-width: 500px;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-items: center;
+}
+.student{
+    /* border: 2px solid red; */
+    /* width: 60%; */
+    top: 2vh;
+    text-align: center;
+    margin-top: 10px;
+    height: 95vh;
+    display: none;
+    color: white;
+    /* border-style: double; */
+
+}
+.faculty{
+    /* border: 2px solid red; */
+    /* width: 60%; */
+    text-align: center;
+    /* font-size: 50px; */
+    height: 58rem;
+    display: none;
+    color: white;
+}
+.fake{
+    top: 2vh;
+    position: relative;
+    /* bottom: 600px; */
+    height: 99.7vh;
+    text-align: center;
+    /* font-size: 70px; */
+    color: white;
+}
+
+.txt {
+    font-family: 'Merienda One', cursive;
+    bottom: 30px;
+    font-size: 60px;
+    /* left: 60px; */
+    position: relative;
+    color: rgb(255, 255, 255);
+    /* right: -28px; */
+}
+
+.dropdown{
+    display: none;
+}
+.activebtn{
+    width: 100%;
+}
+.search{
+    width: 80%;
+    height: 40px;
+    border-radius: 40px;
+    border: none;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Pushster', cursive;
+}
+.inserta{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 5px;
+    column-gap: 10px;
+}    
+.insert{
+    height: 250px;
+    background-color:white;
+    margin-bottom: 20px;
+    color: black;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.facins{
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row;
+}
+.student-nav {
+    display: flex;
+    justify-content: center;
+}
+.add-student-btn {
+    margin-left: 4px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+.banner img {
+    /* width: 938px;
+    height: 664px; */
+    position: relative;
+    /* top: 30px;
+    left: -81px; */
+    /* border: 3px solid #73AD21; */
+}
+
+.profile img{
+    top: 100px;
+    width: 10vw;
+}
+
+.data{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 20px;
+    /* text-align: center; */
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+
+    border-radius: 50px;
+    /* moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out; */
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    /* moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out; */
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-1 {
+    background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+    box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+.btn-hover.color-2 {
+    background-image: linear-gradient(to right, #ed6ea0, #ec8c69, #f7186a , #FBB03B);
+box-shadow: 0 4px 15px 0 rgba(236, 116, 149, 0.75);
+}
+
+.edit-form {
+    display: none;
+}
+.doc-element{
+    border: 2px solid black;
+    height: 30px;
+}

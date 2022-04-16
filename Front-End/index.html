@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merienda+One&family=Pushster&family=Be+Vietnam+Pro:wght@100&font-family: 'PT Serif', serif;&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo"><img src="A3.jpg" alt="A3KR"></div>
+        <div class="navmanu">
+            <button id="stable" onclick="student()" class="btn-hover color-1">Personal Details</button>
+            <button id="ftable" onclick="faculty()" class="btn-hover color-1">Faculty Names</button>
+            <button class="btn-hover color-2"><a href='index1.html' class="effect-box">Log out</a></button>
+        </div>
+    </div>
+    <div class="function">
+        <div class="fake">
+            <div class="banner">
+                <img src="logo.png"> 
+                <div class="txt">Welcome Student</div>           
+            </div>
+        </div>
+        <div class="student">
+            <h1><u>Student's Detail<br><br></u></h1>
+            <div class="profile">
+                <img src="students.png" alt="studentImage" id="stdimg"><br><br>
+                <div class="data">
+                    <form action="/action_page.php">
+
+                        <!-- IMPORTANT: &nsp is used for putting spaces. -->
+
+                        <label for="name"><b>Name:</b></label>
+                        <input type="text" class="doc_element" id="name" disabled><br><br>
+                        
+                        <label for="stream"><b>Stream:</b></label>
+                        <input type="text" class="doc_element" id="stream" disabled><br><br>
+                        
+                        <label for="roll"><b>Roll No:</b></label>
+                        <input type="number"class="doc_element" id="roll" disabled><br><br>
+                        
+                        <label for="regNo"><b>Reg No:</b></label>
+                        <input type="number" class="doc_element" id="roll" disabled><br><br>
+                        
+                        <label for="marks"><b>Marks(CGPA):</b>;</label>
+                        <input type="nimber" class="doc_element" id="marks" disabled><br><br>
+                        
+                        <!-- <label for="fee"><b>Fee:</b></label>
+                        <input type="checkbox" value="due" disabled>
+                        <label for="due"><b>Due</b></label>
+                        <input type="checkbox" value="paid" checked disabled>
+                        <label for="paid"><b>Paid</b></label>     -->
+                      </form>
+                </div>
+                
+            </div>
+        </div>
+        <div class="faculty">
+            <h1>Faculty List</h1>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

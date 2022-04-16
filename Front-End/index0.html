@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"crossorigin="anonymous" />
+    <title>Faculty Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Pushster&family=Calligraffitti&family=Merienda+One&family=Dancing+Script&family=PT+Serif:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        #unique{
+            font-size: 30px;
+            border: none;
+        }
+        #headw{
+            font-size: 40px;
+            color: rgb(2, 182, 253);
+        }
+        #profile{
+            font-size: 40px;
+            color: rgb(144, 29, 29);
+        }
+    </style>
+</head>
+<body>
+    <div class="navigation">
+        <div class="logo"><img src="A3.jpg" alt="A3KR"></div>
+        <div class="navmanu">
+            <button id="stable" onclick="dropstudent()" class="btn-hover color-1">Student</button>
+            <button id="ftable" onclick="faculty()" class="btn-hover color-1">Faculty</button>
+            <button class="btn-hover color-2"><a href='index1.html'class="effect-box sparkle u-hover--sparkle">Log out</a></button>
+        </div>
+    </div>
+    <div class="function">
+        <div class="fake">
+            <div class="banner">
+                <img src="logo.png"> 
+                <div class="txt">Welcome Teacher</div>           
+            </div>
+        </div>
+        <div class="student">
+            <h1>Find Student Details</h1>
+            <div class="student-nav">
+                <input type="text" class="search" placeholder="Find the Student by Std-Id">
+                <button class="add-student-btn" onclick="addStudent()">Add Student</button>
+            </div>
+        </div>
+        <form class='form'>
+            <h2 style="text-align: center;">ADD STUDENT</h2>
+            <div class="mb-3">
+                <input id="Name" class="form-control" placeholder="Enter Name" required>
+            </div>
+            <div class="mb-3">
+                <input id="Regno" class="form-control" placeholder="Enter registration number" required>
+            </div>
+            <div class="mb-3">
+                <input id="Roll" class="form-control" placeholder="Enter Roll Number" required>
+            </div>
+            <div class="mb-3">
+                <input id="Course" class="form-control" placeholder="Enter Course" required>
+            </div>
+            <div class="mb-3">
+                <input id="Phone" class="form-control" placeholder="Enter phone Number" required>
+            </div>
+            <div class="mb-3">
+                <input id="Address" class="form-control" placeholder="Enter address" required>
+            </div>
+            <div class="mb-3">
+                <input id="Email" placeholder="Enter Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <input id="Stream" placeholder="Enter Stream" class="form-control" required>
+            </div> 
+            <div class="mb-3">
+                <input id="HOD" placeholder="Enter Head of Department" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <input id="CGPA" placeholder="Enter CGPA of last semester " class="form-control" required>
+            </div>   
+            <button type="submit" class="btn btn-primary" onclick="submitFormStudent()">Submit</button>
+        </form>
+        <form class="edit-form">
+        <div class="container rounded bg-white mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-3 border-right">
+                    <div class="d-flex flex-column align-items-center text-center p-3 py-5">
+                        <img class="rounded-circle mt-5" width="150px" src="https://st3.depositphotos.com/15648834/17930/v/600/depositphotos_179308454-stock-illustration-unknown-person-silhouette-glasses-profile.jpg">
+                        <span id="logo-name" class="font-weight-bold"></span>
+                        <span id="logo-email" class="text-black-50"></span>
+                        <span> </span>
+                    </div>
+                </div>
+                <div class="col-md-5 border-right">
+                    <div class="p-3 py-5">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h4 id="profile" class="text-right">Profile Settings</h4>
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-md-12">
+                                <label class="labels">Name</label>
+                                <input id="name" type="text" class="form-control" placeholder="Name" value="">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <label class="labels">Mobile Number</label>
+                                <input id="phone" type="text" class="form-control" placeholder="Enter Phone Number" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">Address</label>
+                                <input id="address" type="text" class="form-control" placeholder="Enter Address" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">Stream</label>
+                                <input id="stream" type="text" class="form-control" placeholder="Enter Stream" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">Roll Number</label>
+                                <input id="roll" type="text" class="form-control" placeholder="Enter Roll Number" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">Registration Number</label>
+                                <input id="regno" type="text" class="form-control" placeholder="Enter Reg. no" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">CGPA</label>
+                                <input id="cgpa" type="text" class="form-control" placeholder="Enter CGPA" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">Grade</label>
+                                <input id="grade" type="text" class="form-control" placeholder="Enter Grade" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">Email ID</label>
+                                <input id="email" type="text" class="form-control" placeholder="Enter Email id" value="">
+                            </div>
+                            <div class="col-md-12">
+                                <label class="labels">Head of Depertment</label>
+                                <input id="hod" type="text" class="form-control" placeholder="HOD Name" value="">
+                            </div>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <button id="save" class="btn btn-primary profile-button" type="button" onclick="updateProfile()">Save Profile</button>
+                            <button id="delete" class="btn btn-primary profile-button" type="button">Delete Profile</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-3 py-5">
+                        <div id="headw" class="d-flex justify-content-between align-items-center experience"><span>Notice</span></div><br>
+                        <div class="col-md-12">
+                            <!-- <label class="labels">Scholarship</label> -->
+                            <span class="form-control" id="unique">
+                                Remember to Enter the Details Carefully
+                            </span>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </form>
+        <div class="faculty">
+            <h1>Find Faculty Details</h1>
+            <input type="text" class="search" placeholder="Find the Faculty by Fac-Id">
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
